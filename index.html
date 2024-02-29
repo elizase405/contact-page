@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, inital-scale=1.0"/>
+        <title>Contact page</title>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <header>
+            <img src="./assets/logo.svg" alt="logo" />
+        </header>
+        <main>
+            <section class="info">
+                <h1>Interested in our business pricing?</h1>
+                <p>Fill out the form to view details and we'll contact you as soon as possible.</p>
+            </section>
+            <section class="form">
+                <form>
+                    <div class="flex">
+                        <div>
+                            <label for"name">Name</label>
+                            <input id="name" type="text" placeholder="Ethan Johnson" name="name"/>
+                        </div>
+                        <div>
+                            <label for="email">Company Email</label>
+                            <input id="email" type="text" placeholder="ethan@johnson.com" name="email"/>
+                        </div>
+                        <div class="dropdown">
+                            <img src="./assets/down-arrow.svg" />
+                            <label for="company-size">Company Size</label>
+                            <select id="company-size" name="company-size">
+                                <option value="50-100 employees">50-100 employees</option>
+                                <option value="100-150 employees">100-150 employees</option>
+                                <option value="150-200 employees">150-200 employees</option>
+                            </select>
+                        </div>
+                        <div class="dropdown">
+                            <img src="./assets/down-arrow.svg" />
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject">
+                                <option value="Building Landing pages">Building Landing pages</option>
+                                <option value="Others">Others</option>
+                            </select>
+                    </div>
+                    </div>
+                    <label for="message">Message</label>
+                    <textarea id="message" value="50-100 employees">50-100 employees</textarea>
+                    <button>Contact Sales</button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

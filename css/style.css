@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    background-image: url("../assets/bg-image.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    padding: 20px 0;
+}
+
+main section.info {
+    text-align: center;
+    padding: 20px 0 40px;
+}
+
+main section.info h1{
+    font-size: 64px;
+    color: #fff;
+}
+
+main section.info p{
+    font-size: 32px;
+    padding: 10px 0;
+    color: #F8FAFC;
+}
+
+main section.form {
+    background-color: rgba(205, 213, 224, .3); /*CDD5E0*/
+    padding: 30px;
+    border-radius: 25px;
+}
+
+label {
+    color: #F8FAFC;
+}
+
+input, select, textarea, button {
+    display: block;
+    width: 100%;
+    height: 70px;
+    border-radius: 15px;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+}
+
+div.dropdown {
+    position: relative;
+}
+
+div.dropdown img{
+    position: absolute;
+    right: 10px;
+    bottom: 25%;
+}
+
+select, textarea, button {
+    font-weight: bold;
+}
+
+select {
+    -webkit-appearance: none;
+}
+
+textarea {
+    height: 200px;
+}
+
+button {
+    font-size: 20px;
+    color: #4036A9;
+    cursor: pointer;
+}
+
+@media (min-width: 1280px) {
+    main section{
+        margin: 0 auto;
+    }
+
+    main section.info{
+        width: 50%;
+    }
+
+    main section.form {
+        width: 60%;
+    }
+
+    form div.flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    form div.flex div{
+        width: 47%;
+    }
+
+    form div.flex div:nth-child(2n+1){
+        margin-right: 20px;
+    }
+    form div.flex div:nth-child(2n+0){
+        width: 50%;
+    }
+
+    div.dropdown img{
+        right: 20px;
+        bottom: 40%;
+    }
+}
